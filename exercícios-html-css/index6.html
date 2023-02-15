@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-clases</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: rgb(73, 73, 211);
+            text-decoration: none;
+            font-style: italic;
+        }
+        a:hover {
+            text-decoration:underline;
+        }
+        a:active {
+            color: aqua;
+        }
+        a::after{
+            content: ' <';
+            color: black;
+        }
+        a::before{
+            content: '> ';
+            color: black;
+        }
+
+        .d0 {
+            background-color: lightgray;
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .d0:hover {
+            background-color: yellow;
+            
+        }
+
+        #d4 {
+            cursor: pointer;
+            width: 130px;
+        }
+
+        #d4:hover > p{
+            display: block;
+            color: white;
+            background-color: black;
+            width: 170px;
+        }
+
+        #d4 > p{
+            display: none;
+        }
+        /* #d4 > p significa que o <p> que está dentro da <div> não vai aparecer */
+
+        #d4:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1" class="d0">01</div>
+    <div id="d2" class="d0">02</div>
+    <div id="d3" class="d0">03</div>
+
+    <h3>Passe o mouse no texto abaixo:</h3>
+    <div id="d4">
+        Passe o mouse aqui
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+
+    <h3>Personalização de links</h3>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io/" target="_blank">Repositório do GitHub</a></li>
+        <li><a href="https://www.youtube.com/@CursoemVideo" target="_blank">Canal do Curso em Vídeo</a></li>
+        <li><a href="https://cursoemvideo.com" target="_blank">Site do Curso em Vídeo</a></li>
+    </ul>
+</body>
+</html>
