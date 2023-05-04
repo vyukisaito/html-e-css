@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Teste de Einstein</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1>Teste de Einstein</h1>
+        <div id="questions">
+            <ol>
+                <li>Qual é a nacionalidade do dono do peixe?</li>
+                <li>Qual é a cor da casa do norueguês?</li>
+                <li>Qual é a bebida favorita do homem que fuma cigarros Blends?</li>
+                <li>Qual é o animal de estimação da pessoa que bebe água?</li>
+                <li>Qual é a cor da casa do homem que fuma cigarros Blue Master?</li>
+            </ol>
+        </div>
+        <div id="answers">
+            <form>
+                <ol>
+                    <li>
+                        <label><input type="radio" name="nationality" value="norwegian">Norueguês</label>
+                        <label><input type="radio" name="nationality" value="danish">Dinamarquês</label>
+                        <label><input type="radio" name="nationality" value="british">Britânico</label>
+                        <label><input type="radio" name="nationality" value="german">Alemão</label>
+                        <label><input type="radio" name="nationality" value="swedish">Sueco</label>
+                    </li>
+                    <li>
+                        <label><input type="radio" name="houseColor" value="yellow">Amarela</label>
+                        <label><input type="radio" name="houseColor" value="blue">Azul</label>
+                        <label><input type="radio" name="houseColor" value="red">Vermelha</label>
+                        <label><input type="radio" name="houseColor" value="green">Verde</label>
+                        <label><input type="radio" name="houseColor" value="white">Branca</label>
+                    </li>
+                    <li>
+                        <label><input type="radio" name="drink" value="water">Água</label>
+                        <label><input type="radio" name="drink" value="tea">
+                    </li>
+                    <li>
+                        <label><input type="radio" name="pet" value="birds">Pássaros</label>
+                        <label><input type="radio" name="pet" value="cats">Gatos</label>
+                        <label><input type="radio" name="pet" value="dogs">Cachorros</label>
+                        <label><input type="radio" name="pet" value="horses">Cavalos</label>
+                        <label><input type="radio" name="pet" value="fish">Peixes</label>
+                    </li>
+                    <li>
+                        <label><input type="radio" name="cigarettes" value="blends">Blends</label>
+                        <label><input type="radio" name="cigarettes" value="bluemaster">Blue Master</label>
+                        <label><input type="radio" name="cigarettes" value="dunhill">Dunhill</label>
+                        <label><input type="radio" name="cigarettes" value="pallmall">Pall Mall</label>
+                        <label><input type="radio" name="cigarettes" value="prince">Prince</label>
+                    </li>
+                </ol>
+                <button type="button" id="submit">Enviar Respostas</button>
+            </form>
+        </div>
+        <div id="hints">
+            <p id="hint1"></p>
+            <p id="hint2"></p>
+            <p id="hint3"></p>
+            <p id="hint4"></p>
+            <p id="hint5"></p>
+        </div>
+        <div id="result">
+            <p id="result-text"></p>
+            <button type="button" id="reset">Jogar Novamente</button>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>

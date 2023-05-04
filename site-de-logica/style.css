@@ -1,0 +1,59 @@
+#container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+#questions {
+    margin-top: 2rem;
+    text-align: left;
+}
+
+#answers {
+    margin-top: 2rem;
+    text-align: left;
+}
+
+#hints {
+    margin-top: 2rem;
+    text-align: left;
+}
+
+#result {
+    display: none;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#result-text {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0062cc;
+}
+
+label {
+    margin-right: 1rem;
+}
+
+input[type="radio"] {
+    margin-right: 0.5rem;
+}
