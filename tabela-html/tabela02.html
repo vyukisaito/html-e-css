@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,28 +10,36 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
+
         table {
             width: 500px;
             border-collapse: collapse;
         }
-        td, th {
+
+        td,
+        th {
             border: 1px solid black;
             padding: 10px;
         }
-        thead, tfoot {
+
+        thead,
+        tfoot {
             background-color: gray;
             color: white;
         }
+
         .num {
             text-align: right;
         }
     </style>
 </head>
+
 <body>
     <h1>Tabelas Grandes</h1>
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+        CAPTION
             THEAD - Cabeça da Tabela
                 TR, TD, TH
             TBODY - Corpo da Tabela
@@ -39,11 +48,12 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População</caption>
         <thead>
             <tr>
                 <th>Estado</th>
                 <th>População</th>
-                
+
             </tr>
         </thead>
 
@@ -70,4 +80,5 @@
         </tfoot>
     </table>
 </body>
+
 </html>
