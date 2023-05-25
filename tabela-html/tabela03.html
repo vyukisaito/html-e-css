@@ -21,12 +21,25 @@
             padding: 10px;
             text-align: center;
         }
+
+        #a {
+            background-color: yellow;
+        }
+
+        #b {
+            background-color: blueviolet;
+        }
     </style>
 </head>
 
 <body>
     <h1>Mesclagem de Tabelas</h1>
     <table>
+        <colgroup>
+            <col id="a">
+            <col id="b" span="2">
+
+        </colgroup>
         <tr>
             <td>A</td>
             <td colspan="2">B</td>
